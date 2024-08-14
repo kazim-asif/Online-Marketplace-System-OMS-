@@ -1,0 +1,4 @@
+3,seller,seller@gmail.com,seller dummy address,seller123,400.0
+5,Loaded Fries,Fresh Fries with condiments,Refreshment,200.0,9,-1
+4,bob,bob@gmail.com,main St 34,bob123,100.0
+6,Burger,Fresh Zinger burger with cheese.,Fats food,100.0,10,-1

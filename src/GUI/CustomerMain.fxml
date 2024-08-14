@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="398.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Customer">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="738.0">
+         <children>
+            <Text layoutX="292.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panneau Client">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="showproductsarea" editable="false" layoutX="56.0" layoutY="90.0" prefHeight="200.0" prefWidth="295.0" wrapText="true" />
+            <Text layoutX="135.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tous les produits disponibles" />
+            <TextArea fx:id="cartarea" editable="false" layoutX="397.0" layoutY="90.0" prefHeight="200.0" prefWidth="295.0" wrapText="true" />
+            <Text layoutX="520.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="votre panier" />
+            <Button fx:id="logoutbtn" layoutX="351.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+            <Button fx:id="checkoutbtn" layoutX="520.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleCheckOut" text="Checkout" />
+            <DialogPane fx:id="dialog" contentText="sssss" headerText="Order status" layoutX="189.0" layoutY="108.0" prefHeight="155.0" prefWidth="360.0" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DialogPane>
+            <TextField fx:id="pid1" layoutX="477.0" layoutY="331.0" prefHeight="25.0" prefWidth="77.0" />
+            <Text layoutX="408.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Id" />
+            <Button fx:id="removebtn" layoutX="568.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleRemoveFromCartCart" text="Supprimer du panier" />
+            <Button fx:id="refreshbtn" layoutX="176.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleRefresh" text="Rafraîchir" />
+            <TextField fx:id="pid" layoutX="477.0" layoutY="299.0" prefHeight="25.0" prefWidth="77.0" />
+            <Text layoutX="408.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Id" />
+            <Button fx:id="addbtn" layoutX="568.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleAddToCart" prefHeight="25.0" prefWidth="125.0" text="Ajouter au panier" />
+            <TextField fx:id="category" layoutX="167.0" layoutY="352.0" prefHeight="25.0" prefWidth="77.0" />
+            <Text layoutX="92.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By category" />
+            <TextField fx:id="name" layoutX="167.0" layoutY="320.0" prefHeight="25.0" prefWidth="77.0" />
+            <Text layoutX="92.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By name" />
+            <Button fx:id="searchbtn" layoutX="261.0" layoutY="320.0" mnemonicParsing="false" onAction="#handlesearch" prefHeight="91.0" prefWidth="54.0" text="Search" />
+            <TextField fx:id="maxprice" layoutX="167.0" layoutY="385.0" prefHeight="25.0" prefWidth="77.0" />
+            <Text layoutX="92.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By max price" />
+            <Text layoutX="146.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrer les produits" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

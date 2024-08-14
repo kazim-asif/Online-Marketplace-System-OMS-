@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="398.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Seller">
+   <children>
+      <Pane prefHeight="497.0" prefWidth="719.0">
+         <children>
+            <Text layoutX="315.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panneau du vendeur">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="showproductsarea" editable="false" layoutX="52.0" layoutY="87.0" prefHeight="230.0" prefWidth="360.0" />
+            <Text layoutX="52.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails de vos produits" />
+            <Text layoutX="538.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mettre à jour le produit" />
+            <TextField fx:id="quantity" layoutX="540.0" layoutY="123.0" />
+            <Text layoutX="462.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" />
+            <TextField fx:id="price" layoutX="540.0" layoutY="163.0" />
+            <Text layoutX="462.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" />
+            <TextField fx:id="category" layoutX="540.0" layoutY="208.0" />
+            <Text layoutX="462.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" />
+            <TextArea fx:id="description" layoutX="539.0" layoutY="251.0" prefHeight="123.0" prefWidth="149.0" wrapText="true" />
+            <Text layoutX="464.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+            <Button fx:id="gobackbtn" layoutX="344.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleGoBack" text="Go back" />
+            <Button fx:id="refreshbtn" layoutX="206.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleRefresh" text="Rafraîchir" />
+            <Button fx:id="updatebtn" layoutX="580.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleUpdate" text="Mise à jour" />
+            <TextField fx:id="updatepid" layoutX="540.0" layoutY="87.0" />
+            <Text layoutX="462.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

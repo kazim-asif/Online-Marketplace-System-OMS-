@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login">
+   <children>
+      <Pane prefHeight="404.0" prefWidth="657.0">
+         <children>
+            <Text layoutX="208.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Système de marché en ligne">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" layoutX="355.0" layoutY="127.0" />
+            <TextField fx:id="password" layoutX="355.0" layoutY="186.0" />
+            <Text layoutX="215.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="215.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="loginbtn" layoutX="307.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="73.0" text="Login" />
+            <Button fx:id="signupbtn" layoutX="307.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="25.0" prefWidth="73.0" text="SignUp" />
+            <Text layoutX="215.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User ?" />
+            <Button fx:id="signupbtn1" layoutX="288.0" layoutY="337.0" mnemonicParsing="false" onAction="#EndSession" prefHeight="25.0" prefWidth="117.0" text="Fin de session" />
+            <Text layoutX="141.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N'oubliez pas de terminer la session après avoir effectué les opérations" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
